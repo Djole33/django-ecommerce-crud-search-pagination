@@ -22,3 +22,6 @@ def detail(request, pk):
     single_product = Product.objects.get(id=pk)
 
     return render(request, 'main/detail.html', {'single_product': single_product})
+
+def checkout(request):
+    return render(request, 'main/checkout.html')
